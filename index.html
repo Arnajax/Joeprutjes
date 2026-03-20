@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joep Rutjes — Model represented by MAXModels. Portfolio, measurements and contact.">
+  <title>Joep Rutjes — Model</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav nav--over-hero" id="nav" aria-label="Main navigation">
+    <a href="#" class="nav__logo" aria-label="Joep Rutjes — home">JR</a>
+
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li><a href="#instagram" class="nav__link">Instagram</a></li>
+      <li><a href="#stats"     class="nav__link">Stats</a></li>
+      <li><a href="#about"     class="nav__link">About</a></li>
+      <li><a href="#contact"   class="nav__link">Contact</a></li>
+    </ul>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <div class="hero__image-wrap">
+      <!--
+        HERO IMAGE — replace the placeholder div below with:
+        <img class="hero__img" src="./images/hero.jpg" alt="Joep Rutjes" fetchpriority="high">
+      -->
+      <img class="hero__img" src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/027.jpg" alt="Joep Rutjes" fetchpriority="high" style="object-fit:cover;object-position:top center">
+    </div>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Model</p>
+      <h1 class="hero__name">Joep<br>Rutjes</h1>
+      <a href="#portfolio" class="hero__cta">View Portfolio</a>
+    </div>
+
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO
+  ============================================================ -->
+  <section class="section portfolio" id="portfolio" aria-label="Portfolio">
+    <div class="container">
+
+      <header class="section__header fade-in">
+        <p class="section__label">Work</p>
+        <h2 class="section__title">Portfolio</h2>
+      </header>
+
+      <div class="portfolio__masonry" id="portfolioGrid">
+
+        <!-- Item 1 — large opener, spans 2 rows on mobile -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="0">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/047.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="1">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/046.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="2">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/028.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="3">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/024.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="4">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/041.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio__item fade-in">
+          <div class="portfolio__img-wrap" data-index="5">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/039.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Items 7–10 — hidden on mobile until "Load more" is pressed -->
+        <div class="portfolio__item portfolio__item--extra fade-in">
+          <div class="portfolio__img-wrap" data-index="6">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/015.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="portfolio__item portfolio__item--extra fade-in">
+          <div class="portfolio__img-wrap" data-index="7">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/018.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="portfolio__item portfolio__item--extra fade-in">
+          <div class="portfolio__img-wrap" data-index="8">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/043.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="portfolio__item portfolio__item--extra fade-in">
+          <div class="portfolio__img-wrap" data-index="9">
+            <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/042.jpg" alt="Joep Rutjes" style="object-fit:cover;object-position:top center">
+            <div class="portfolio__hover" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div><!-- /.portfolio__masonry -->
+
+      <button class="portfolio__load-more" id="loadMore" aria-label="Load more photos">
+        Load more
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INSTAGRAM
+  ============================================================ -->
+  <section class="section instagram" id="instagram" aria-label="Instagram">
+    <div class="container">
+
+      <header class="section__header fade-in">
+        <p class="section__label">Social</p>
+        <h2 class="section__title">Instagram</h2>
+        <a
+          href="https://www.instagram.com/joeprutjes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="instagram__handle"
+          aria-label="Follow Joep Rutjes on Instagram"
+        >@joeprutjes</a>
+      </header>
+
+      <div style="text-align:center;" class="fade-in">
+        <a
+          href="https://www.instagram.com/joeprutjes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="instagram__cta"
+        >
+          <!-- Instagram icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+          Follow on Instagram
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS / MEASUREMENTS
+  ============================================================ -->
+  <section class="section stats" id="stats" aria-label="Measurements">
+    <div class="container">
+
+      <header class="section__header fade-in">
+        <p class="section__label">Details</p>
+        <h2 class="section__title">Measurements</h2>
+      </header>
+
+      <div class="stats__grid">
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Height</span>
+          <span class="stats__value">190</span>
+          <span class="stats__sub">cm</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Chest</span>
+          <span class="stats__value">97</span>
+          <span class="stats__sub">cm</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Waist</span>
+          <span class="stats__value">80</span>
+          <span class="stats__sub">cm</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Hips</span>
+          <span class="stats__value">93</span>
+          <span class="stats__sub">cm</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Shoes</span>
+          <span class="stats__value">43</span>
+          <span class="stats__sub">EU</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Suit</span>
+          <span class="stats__value">50</span>
+          <span class="stats__sub">EU</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Hair</span>
+          <span class="stats__value">Brown</span>
+        </div>
+
+        <div class="stats__card fade-in">
+          <span class="stats__label">Eyes</span>
+          <span class="stats__value">Brown</span>
+        </div>
+
+        <!-- Agency — full-width row -->
+        <div class="stats__card stats__card--agency fade-in">
+          <div class="stats__info">
+            <span class="stats__label">Agency</span>
+            <span class="stats__value">MAXModels</span>
+          </div>
+          <a
+            href="https://www.maxmodels.nl/mainboard/joep-rutjes/6157/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="stats__agency-link"
+            aria-label="View Joep Rutjes on MAXModels"
+          >
+            View profile
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </a>
+        </div>
+
+      </div><!-- /.stats__grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="section about" id="about" aria-label="About">
+    <div class="container">
+
+      <div class="about__inner">
+
+        <!-- Portrait placeholder -->
+        <div class="about__image fade-in">
+          <img src="https://s3.eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1589126/Xlarge/040.jpg" alt="Joep Rutjes portrait" style="object-fit:cover;object-position:top center;width:100%;aspect-ratio:4/5">
+        </div>
+
+        <!-- Text -->
+        <div class="about__text fade-in">
+          <header class="section__header--left">
+            <p class="section__label">About</p>
+            <h2 class="section__title">Joep Rutjes</h2>
+          </header>
+
+          <p class="about__bio">Coming soon.</p>
+
+          <div class="about__agency">
+            <span class="about__agency-label">Represented by</span>
+            <a
+              href="https://www.maxmodels.nl/mainboard/joep-rutjes/6157/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__agency-name"
+            >MAXModels</a>
+            <a
+              href="https://www.maxmodels.nl/mainboard/joep-rutjes/6157/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__agency-link"
+            >maxmodels.nl/mainboard/joep-rutjes/6157</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container">
+
+      <header class="section__header fade-in">
+        <p class="section__label">Get in touch</p>
+        <h2 class="section__title">Contact</h2>
+      </header>
+
+      <div class="contact__inner">
+
+        <!-- Left column — info & social -->
+        <div class="fade-in">
+          <p class="contact__text">
+            For bookings, castings and collaborations, please reach out through
+            MAXModels or connect via Instagram.
+          </p>
+
+          <div class="contact__social">
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/joeprutjes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__social-link"
+              aria-label="Joep Rutjes on Instagram"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+              </svg>
+              @joeprutjes
+            </a>
+
+            <!-- MAXModels -->
+            <a
+              href="https://www.maxmodels.nl/mainboard/joep-rutjes/6157/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__social-link"
+              aria-label="Joep Rutjes on MAXModels"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              MAXModels
+            </a>
+          </div>
+
+          <a
+            href="https://www.maxmodels.nl/contact/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__agency-btn"
+            aria-label="Contact via MAXModels"
+          >
+            Contact via MAXModels
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right column — agency info -->
+        <div class="contact__info fade-in">
+          <div class="contact__info-block">
+            <span class="contact__info-label">Agency</span>
+            <span class="contact__info-value">MAXModels</span>
+            <a
+              href="https://www.maxmodels.nl/contact/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__info-link"
+            >maxmodels.nl/contact</a>
+          </div>
+
+          <div class="contact__info-block">
+            <span class="contact__info-label">Instagram</span>
+            <span class="contact__info-value">@joeprutjes</span>
+            <a
+              href="https://www.instagram.com/joeprutjes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__info-link"
+            >instagram.com/joeprutjes</a>
+          </div>
+
+          <div class="contact__info-block">
+            <span class="contact__info-label">Location</span>
+            <span class="contact__info-value">Netherlands</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">
+        &copy; <span id="footerYear"></span> Joep Rutjes
+      </p>
+      <a
+        href="https://www.maxmodels.nl/mainboard/joep-rutjes/6157/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer__agency"
+        aria-label="MAXModels agency"
+      >MAXModels</a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
